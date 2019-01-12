@@ -1,6 +1,7 @@
 ## DatePicker
 ## 介绍
 Uni-App的一个支持多类型选择（日期、日期时间、时间）的时间选择插件
+
 [Uni-App插件地址](https://ext.dcloud.net.cn/plugin?id=112)
 ## 属性说明
 * v-model [Boolean] 是否显示控件（双向绑定）
