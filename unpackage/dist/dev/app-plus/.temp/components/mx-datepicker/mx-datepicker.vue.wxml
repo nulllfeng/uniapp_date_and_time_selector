@@ -1,0 +1,68 @@
+<template name="5458e2a2">
+  <view class="_view data-v-09d81667">
+    <view hidden="{{!(isShow)}}" class="_view data-v-09d81667 mask">
+      <view class="_view data-v-09d81667 modal">
+        <view wx:if="{{format!='time'}}" class="_view data-v-09d81667 modal-header">
+          <text class="_text data-v-09d81667 modal-header-pointer" bindtap="handleProxy" data-eventid="{{'ese-0'}}" data-comkey="{{$k}}">
+            <text class="_text data-v-09d81667 icon icon-left"></text>
+          </text>
+          <text class="_text data-v-09d81667">{{date.year}}年 - {{date.month}}月</text>
+          <text class="_text data-v-09d81667 modal-header-pointer" bindtap="handleProxy" data-eventid="{{'H4v-1'}}" data-comkey="{{$k}}">
+            <text class="_text data-v-09d81667 icon icon-right"></text>
+          </text>
+          <view class="_view data-v-09d81667 modal-header-colse" bindtap="handleProxy" data-eventid="{{'5bU-2'}}" data-comkey="{{$k}}">
+            <text class="_text data-v-09d81667 icon icon-close"></text>
+          </view>
+        </view>
+        <view wx:else class="_view data-v-09d81667 modal-header">
+          <text class="_text data-v-09d81667">选择时间</text>
+          <view class="_view data-v-09d81667 modal-header-colse" bindtap="handleProxy" data-eventid="{{'FJH-3'}}" data-comkey="{{$k}}">
+            <text class="_text data-v-09d81667 icon icon-close"></text>
+          </view>
+        </view>
+        <view class="_view data-v-09d81667 modal-body">
+          <view wx:if="{{format!='time'}}" class="_view data-v-09d81667 date">
+            <view class="_view data-v-09d81667 date-header">
+              <view wx:key="index" key="{{index}}" wx:for="{{['一','二','三','四','五','六','日']}}" wx:for-index="index" wx:for-item="header" class="_view data-v-09d81667">{{header}}</view>
+            </view>
+            <view class="_view data-v-09d81667 date-body">
+              <view wx:key="index" key="{{index}}" id="{{index}}" bindtap="handleProxy" data-eventid="{{'iyn-4-'+index}}" data-comkey="{{$k}}" wx:for="{{dateList}}" wx:for-index="index" wx:for-item="item" class="_view data-v-09d81667 {{[item.selected ? 'active' : '', item.is_gray ? 'gray' : '']}}">{{item.date}}</view>
+            </view>
+          </view>
+          <view wx:if="{{format=='datetime' || format=='time'}}" class="_view data-v-09d81667 time">
+            <view wx:if="{{format!='time'}}" class="_view data-v-09d81667 line-title" style="padding: 10px 0;">选择时间</view>
+            <view class="_view data-v-09d81667 time-body">
+              <view class="_view data-v-09d81667">
+                <view id="hour" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" data-eventid="{{'BL8-5'}}" data-comkey="{{$k}}" class="_view data-v-09d81667" style=" {{('transform:' + ('translateY(' + timeObj.hour.y + 'px)') + ';')}}">
+                  <view wx:for="{{23+2}}" wx:for-index="index" wx:for-item="value" class="_view data-v-09d81667">{{value-1>=0?(value-1
+                    <10? '0'+(value-1):value-1): '-'}}时</view>
+                  </view>
+                </view>
+                <view class="_view data-v-09d81667">
+                  <view id="minute" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" data-eventid="{{'ImR-6'}}" data-comkey="{{$k}}" class="_view data-v-09d81667" style=" {{('transform:' + ('translateY(' + timeObj.minute.y + 'px)') + ';')}}">
+                    <view wx:for="{{59+2}}" wx:for-index="index" wx:for-item="value" class="_view data-v-09d81667">{{value-1>=0?(value-1
+                      <10? '0'+(value-1):value-1): '-'}}分</view>
+                    </view>
+                  </view>
+                  <view class="_view data-v-09d81667">
+                    <view id="second" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" data-eventid="{{'bzj-7'}}" data-comkey="{{$k}}" class="_view data-v-09d81667" style=" {{('transform:' + ('translateY(' + timeObj.second.y + 'px)') + ';')}}">
+                      <view wx:for="{{59+2}}" wx:for-index="index" wx:for-item="value" class="_view data-v-09d81667">{{value-1>=0?(value-1
+                        <10? '0'+(value-1):value-1): '-'}}秒</view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view style="color: #666;font-size: 14px;padding: 10px 0;" class="_view data-v-09d81667"> 已选择:
+                <text wx:if="{{format!='time'}}" class="_text data-v-09d81667"> {{date.year
+                  <10?( '0'+date.year):date.year}}年 {{date.month<10?( '0'+date.month):date.month}}月 {{date.date<10?( '0'+date.date):date.date}}日 </text>
+                    <text wx:if="{{format=='datetime' || format=='time'}}" class="_text data-v-09d81667"> {{date.hour
+                      <10?( '0'+date.hour):date.hour}}: {{date.minute<10?( '0'+date.minute):date.minute}}: {{date.second<10?( '0'+date.second):date.second}} </text>
+              </view>
+              <view class="_view data-v-09d81667">
+                <view class="_view data-v-09d81667 btn btn-primary" bindtap="handleProxy" data-eventid="{{'aPP-8'}}" data-comkey="{{$k}}">确定</view>
+              </view>
+            </view>
+          </view>
+        </view>
+</template>

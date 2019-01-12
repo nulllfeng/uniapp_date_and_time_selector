@@ -1,0 +1,3 @@
+<import src="/components/nullfeng-datetime/nullfeng-datetime.vue.wxml" />
+<import src="/components/fyf-datepicker/fyf-datepicker.vue.wxml" />
+<import src="/components/mx-datepicker/mx-datepicker.vue.wxml" />
