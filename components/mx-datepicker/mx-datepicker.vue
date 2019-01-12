@@ -14,11 +14,11 @@
 				</view>
 				<view class="modal-body">
 					<!-- 日期选择 -->
-					<view v-if="format!='time'" class="date">
-						<view class="date-header">
+					<view v-if="format!='time'" class="date1">
+						<view class="date1-header">
 							<view v-for="(header,index) in ['一','二','三','四','五','六','日']" :key="index">{{header}}</view>
 						</view>
-						<view class="date-body">
+						<view class="date1-body">
 							<view v-for="(item,index) in dateList" :key="index" :id="index" @click="onSelectDate" :class="{'active': item.selected,'gray': item.is_gray}">{{item.date}}</view>
 						</view>
 					</view>
@@ -316,27 +316,29 @@
 		padding: 10px 0;
 	}
 
-	.date {}
+	.date1 {}
 
 
-	.date-header {
+	.date1-header {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		padding: 5px 0;
 	}
 
-	.date-header view {
+	.date1-header view {
+		display: block;
 		width: 14.28%;
 	}
 
-	.date-body {
+	.date1-body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		width: 100%;
 	}
 
-	.date-body view {
+	.date1-body view {
 		width: 14.28%;
 		padding: 5px 0;
 		transition: .2s;
@@ -344,12 +346,12 @@
 		text-align: center;
 	}
 
-	.date-body view.active {
+	.date1-body view.active {
 		background: #409eff;
 		color: #fff;
 	}
 
-	.date-body view.gray {
+	.date1-body view.gray {
 		background: none;
 		color: #c0c4cc;
 	}
