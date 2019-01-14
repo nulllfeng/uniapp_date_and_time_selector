@@ -1,8 +1,8 @@
 <import src="/components/mx-datepicker/mx-datepicker.vue.wxml" />
-<template name="15e9efd8">
-  <view class="_view data-v-d4081a32">
-    <view class="_view data-v-d4081a32 title">日期选择 - 示例</view>
-    <button type="primary" bindtap="handleProxy" data-eventid="{{'v3E-0'}}" data-comkey="{{$k}}" class="_button data-v-d4081a32">选择日期</button>
-    <template value="{{showPicker}}" bindchange="handleProxy" format="datetime" bindselected="handleProxy" data-eventid="{{'rfA-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'p7s-0'],$root}}" is="5458e2a2"></template>
+<template name="1b7a45e0">
+  <view class="_view data-v-78dab81f">
+    <view class="_view data-v-78dab81f title">日期选择 - 示例</view>
+    <button type="primary" bindtap="handleProxy" data-eventid="{{'HkX-0'}}" data-comkey="{{$k}}" class="_button data-v-78dab81f">选择日期</button>
+    <template value="{{showPicker}}" bindchange="handleProxy" init="2018-12-24 18:00:59" type="datetime" bindselected="handleProxy" data-eventid="{{'NPD-1'}}" data-comkey="{{$k}}" data="{{...$root['0'], ...$root[$kk+'8WI-0'],$root}}" is="5a06e86a"></template>
   </view>
 </template>

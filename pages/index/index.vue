@@ -2,7 +2,7 @@
 	<view>
 		<view class="title">日期选择 - 示例</view>
 		<button type="primary" @click="onShowDatePicker">选择日期</button>
-		<mx-datepicker v-model="showPicker" format="datetime" @selected="onSelected" />
+		<mx-datepicker v-model="showPicker" init="2018-12-24 18:00:59" type="datetime" @selected="onSelected" />
 	</view>
 </template>
 <script>
