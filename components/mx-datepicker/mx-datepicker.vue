@@ -282,9 +282,9 @@
 					else if(this.timeMode=='end') this.timeValue =this.endTime;
 				} else if(this.type=='time') {
 					this.onCancel();
-				} else {
-					this.showTimePicker = show;
+					return;
 				}
+				this.showTimePicker = show;
 			},
 			//确定时间选择
 			onConfirmTime() {

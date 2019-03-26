@@ -13,14 +13,14 @@
 			{{rangetime}}
 			<button type="primary" @click="onShowDatePicker('rangetime')">选择日期时间范围</button>
 		</view>
-		<date-picker :show="showPicker" :type="type" :value="value" :show-seconds="true" @confirm="onSelected" @cancel="onSelected" />
+		<mx-date-picker :show="showPicker" :type="type" :value="value" :show-seconds="true" @confirm="onSelected" @cancel="onSelected" />
 	</view>
 </template>
 <script>
-	import DatePicker from "@/components/datepicker/datepicker.vue";
+	import MxDatePicker from "@/components/mx-datepicker/mx-datepicker.vue";
 	export default {
 		components: {
-			DatePicker
+			MxDatePicker
 		},
 		data() {
 			return {
