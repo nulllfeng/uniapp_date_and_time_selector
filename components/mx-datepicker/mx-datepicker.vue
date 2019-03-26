@@ -82,7 +82,7 @@
 			//类型date time datetime range rangetime
 			type: {
 				type: String,
-				default: 'range'
+				default: 'date'
 			},
 			//是否显示
 			show: {
