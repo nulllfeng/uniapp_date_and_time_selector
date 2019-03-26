@@ -85,7 +85,11 @@
 	}
 </script>
 ```
-![日期选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%E9%80%89%E6%8B%A9.gif)
+![日期时间范围选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%E9%80%89%E6%8B%A9.gif)
+![日期时间选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E9%80%89%E6%8B%A9.gif)
+![日期范围选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%A5%E6%9C%9F%E8%8C%83%E5%9B%B4%E9%80%89%E6%8B%A9.gif)
+![日期选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%A5%E6%9C%9F%E9%80%89%E6%8B%A9.gif)
+![时间选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%B6%E9%97%B4%E9%80%89%E6%8B%A9.gif)
 ## 特别说明
 目前测试的可能不是很全面，如果有BUG或者更好的建议请在评论区反馈。
 
