@@ -1,7 +1,7 @@
 ## DatePicker
 ## 介绍
 全新2.0的版本。支持日期、时间、日期时间、日期范围和日期时间范围选择。   
-地址：[Uni-App插件地址](https://ext.dcloud.net.cn/plugin?id=112) | [Gitee](https://gitee.com/nullfeng/uniapp_date_and_time_selector)
+地址：[Uni-App插件市场地址](https://ext.dcloud.net.cn/plugin?id=112) | [Gitee](https://gitee.com/nullfeng/uniapp_date_and_time_selector)
 ## 属性说明
 |属性|类型|默认值|说明|
 |--	|--	|--	|-- |
@@ -85,7 +85,8 @@
 	}
 </script>
 ```
-## 说明
+![日期选择](https://gitee.com/nullfeng/uniapp_date_and_time_selector/raw/master/gif/%E6%97%A5%E6%9C%9F%E6%97%B6%E9%97%B4%E8%8C%83%E5%9B%B4%E9%80%89%E6%8B%A9.gif)
+## 特别说明
 目前测试的可能不是很全面，如果有BUG或者更好的建议请在评论区反馈。
 
 ## 更新日志
