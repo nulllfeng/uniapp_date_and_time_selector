@@ -1,7 +1,7 @@
 ## DatePicker
 ## 介绍
 全新2.0的版本。支持日期、时间、日期时间、日期范围和日期时间范围选择。   
-地址：[Uni-App插件市场地址](https://ext.dcloud.net.cn/plugin?id=112) | [Gitee](https://gitee.com/nullfeng/uniapp_date_and_time_selector)
+地址：[Uni-App插件市场地址](https://ext.dcloud.net.cn/plugin?id=112) | [Gitee](https://gitee.com/nullfeng/uniapp_date_and_time_selector) | [Github](https://github.com/nulllfeng/uniapp_date_and_time_selector)
 ## 属性说明
 |属性|类型|默认值|说明|
 |--	|--	|--	|-- |
@@ -12,8 +12,8 @@
 |showSeconds|Boolean|false|是否显示秒（针对type为datetime或time时生效）|
 |color|String|#409eff|选择控件的颜色|
 |showHoliday|Boolean|true|是否显示公历节日|
-|@confirm|event||确认选择事件，接受的参数={value:'所选值',date:'原来的日期对象'}|
-|@cancel|event||取消选择事件|
+|@confirm|event|--|确认选择事件，接受的参数={value:'所选值',date:'原来的日期对象'}|
+|@cancel|event|--|取消选择事件|
 ### value说明
 这个参数传入的值必须是type对应格式
 如果`type="time"`，则需要需要传`12:00`这种格式   
