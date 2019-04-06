@@ -95,7 +95,7 @@
 
 <script>
 	/**
-	 * 工具函数
+	 * 工具函数库
 	 */
 	const DateTools = {
 		/**
@@ -572,7 +572,9 @@
 				this.isShow = newValue;
 			},
 			value(newValue, oldValue) {
-				this.setValue(newValue);
+				setTimeout(()=>{
+					this.setValue(newValue);
+				}, 0);
 			}
 		}
 	}
