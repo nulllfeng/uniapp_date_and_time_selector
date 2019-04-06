@@ -194,7 +194,7 @@
 		 * @return Array
 		 */
 		getCalendar(date, proc) {
-			let it = new Date(typeof(date) == 'string' ? this.parse(date) : date),
+			let it = new Date(date),
 				calendars = [];
 			it.setDate(1);
 			it.setDate(it.getDate() - ((it.getDay() == 0 ? 7 : it.getDay()) - 1)); //偏移量
@@ -292,7 +292,7 @@
 				date: {}, //当前日期对象
 				weeks: ["一", "二", "三", "四", "五", "六", "日"],
 				title: '初始化', //标题
-				calendars: [], //日历数组
+				calendars: [[],[],[]], //日历数组
 				calendarIndex: 1, //当前日历索引
 				checkeds: [], //选中的日期对象集合
 				showTimePicker: false, //是否显示时间选择器
@@ -436,23 +436,18 @@
 				let date = new Date(this.date);
 				let before = DateTools.getDateToMonth(date, date.getMonth() - 1);
 				let after = DateTools.getDateToMonth(date, date.getMonth() + 1);
-				if (refresh) {
-					this.calendars = [
-						DateTools.getCalendar(before, this.procCalendar),
-						DateTools.getCalendar(date, this.procCalendar),
-						DateTools.getCalendar(after, this.procCalendar)
-					];
-				} else {
-					if (this.calendarIndex == 0) {
-						this.calendars.splice(1, 1, DateTools.getCalendar(after, this.procCalendar));
-						this.calendars.splice(2, 1, DateTools.getCalendar(before, this.procCalendar));
-					} else if (this.calendarIndex == 1) {
-						this.calendars.splice(0, 1, DateTools.getCalendar(before, this.procCalendar));
-						this.calendars.splice(2, 1, DateTools.getCalendar(after, this.procCalendar));
-					} else if (this.calendarIndex == 2) {
-						this.calendars.splice(0, 1, DateTools.getCalendar(after, this.procCalendar));
-						this.calendars.splice(1, 1, DateTools.getCalendar(before, this.procCalendar));
-					}
+				if (this.calendarIndex == 0) {
+					if(refresh) this.calendars.splice(0, 1, DateTools.getCalendar(date, this.procCalendar));
+					this.calendars.splice(1, 1, DateTools.getCalendar(after, this.procCalendar));
+					this.calendars.splice(2, 1, DateTools.getCalendar(before, this.procCalendar));
+				} else if (this.calendarIndex == 1) {
+					this.calendars.splice(0, 1, DateTools.getCalendar(before, this.procCalendar));
+					if(refresh) this.calendars.splice(1, 1, DateTools.getCalendar(date, this.procCalendar));
+					this.calendars.splice(2, 1, DateTools.getCalendar(after, this.procCalendar));
+				} else if (this.calendarIndex == 2) {
+					this.calendars.splice(0, 1, DateTools.getCalendar(after, this.procCalendar));
+					this.calendars.splice(1, 1, DateTools.getCalendar(before, this.procCalendar));
+					if(refresh) this.calendars.splice(2, 1, DateTools.getCalendar(date, this.procCalendar));
 				}
 				this.title = DateTools.format(this.date, 'yyyy年mm月');
 			},

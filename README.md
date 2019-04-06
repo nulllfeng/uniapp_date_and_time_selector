@@ -128,7 +128,7 @@ v2.1.0
 * 引入`提示文字`
 * 增加滑动切换月份（横向）
 * 调整了显示大小
-* 修复评论区反馈的bug
+* 修复评论区反馈的bug(Gitee [#IUUF0](https://gitee.com/nullfeng/uniapp_date_and_time_selector/issues/IUUF0))
 
 v2.0.0
 * 全新版本
