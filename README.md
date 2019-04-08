@@ -65,7 +65,7 @@
 	</view>
 </template>
 <script>
-	import MxDatePicker from "@/components/mx-date-picker/mx-date-picker.vue";
+	import MxDatePicker from "@/components/mx-datepicker/mx-datepicker.vue";
 	export default {
 		components: {
 			MxDatePicker
