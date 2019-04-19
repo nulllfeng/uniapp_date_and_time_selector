@@ -33,7 +33,7 @@
 | i | 分 |
 | s | 秒 |
 
-示例：yyyy/mm/dd hh:ii:ss => 2019/03/26 23:39
+示例：yyyy/mm/dd hh:ii:ss => 2019/03/26 23:39:59
 
 ### ConfirmObject
 ```javascript
